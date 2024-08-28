@@ -28,7 +28,7 @@ jobs:
       if: matrix.os == 'windows-latest'
       with:
         go-version-file: go.mod
-        cache: false
+        cache: true
 
     - name: go mod tidy
       if: matrix.os == 'ubuntu-latest'
